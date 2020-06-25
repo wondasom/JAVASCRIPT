@@ -156,3 +156,29 @@ const simpleMultiply = (a, b) => {
 (function hello() {
 	console.log(`IIFE`);
 })();
+
+// FUN QUIZ!
+// function calculate(command, a, b)
+// command: add, substract, divide, multiply, remainder
+
+
+// solution
+const calculator = (command, a, b) => {
+	switch (command) {
+		case "add":
+			return a + b;
+			break;
+		case "substract":
+			return a - b;
+			break;
+		case "divide":
+			return a / b;
+			break;
+		case "multiply":
+			return a * b;
+			break;
+		case "remainder":
+			return a % b;
+			break;
+	}
+};
