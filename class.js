@@ -26,3 +26,38 @@ console.log(dasom);
 console.log(dasom.name);
 console.log(dasom.age);
 dasom.speak();
+
+
+// 2. Getter and Setter
+class User {
+	constructor(firstName, lastName, age) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.age = age;
+	}
+	// get age() {
+	// 	return this.age;
+	// }
+	//
+	// set age(value) {
+	// 	this.age = value;
+	// }
+	// -> call stack error
+
+	get age() {
+		return this._age;
+	}
+	set age(value) {
+		//(1)
+		// if (value < 0) {
+		// 	throw Error("age can not be negative");
+		// }
+
+		// (2)
+		this._age = value < 0 ? 0 : value;
+	}
+}
+
+const user1 = new User("Steve", "Job", -1);
+console.log(user1.age);
+
