@@ -161,7 +161,6 @@ const simpleMultiply = (a, b) => {
 // function calculate(command, a, b)
 // command: add, substract, divide, multiply, remainder
 
-
 // solution
 const calculator = (command, a, b) => {
 	switch (command) {

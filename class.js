@@ -128,3 +128,13 @@ console.log(rectangle.getArea());
 const triangle = new Triangle(20, 20, "red");
 triangle.draw();
 console.log(triangle.getArea());
+
+// 6. Class checking: instanceof
+console.log(rectangle instanceof Rectangle); // true
+console.log(triangle instanceof Rectangle); // false
+console.log(triangle instanceof Triangle); // true
+console.log(triangle instanceof Shape); // true
+console.log(triangle instanceof Object); // true
+
+// MDN's JavaScript reference:
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
