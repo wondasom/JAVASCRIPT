@@ -87,3 +87,44 @@ const article2 = new Article(2);
 console.log(article1.publisher); // undefined -> because publisher is static
 console.log(Article.publisher); // 'Dasom Won'
 Article.printPublisher(); // 'Dasom Won'
+
+// 5. Inheritance
+// a way for one class to extend another class.
+class Shape {
+	constructor(width, height, color) {
+		this.width = width;
+		this.height = height;
+		this.color = color;
+	}
+
+	draw() {
+		console.log(`drawing ${this.color} color!`);
+	}
+
+	getArea() {
+		return this.width * this.height;
+	}
+}
+
+class Rectangle extends Shape {
+	draw() {
+		console.log(`🟩`); // method overwriting
+	}
+}
+class Triangle extends Shape {
+	draw() {
+		super.draw(); // same 'draw' method from the parent
+		console.log(`🔺`); // method overwriting
+	}
+	getArea() {
+		return (this.width * this.height) / 2;
+	}
+}
+
+const rectangle = new Rectangle(20, 20, "blue");
+rectangle.draw();
+console.log(rectangle.getArea());
+
+const triangle = new Triangle(20, 20, "red");
+triangle.draw();
+console.log(triangle.getArea());
