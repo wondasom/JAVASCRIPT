@@ -85,3 +85,4 @@ fruits.push("🍉");
 console.log(fruits); // ["🍉", "🍒", "🍊", "🍓", "🍋", "🍉"]
 console.log(fruits.indexOf("🍉")); // 0
 console.log(fruits.lastIndexOf("🍉")); // 5
+
