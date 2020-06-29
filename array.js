@@ -64,3 +64,24 @@ console.log(fruits);
 const fruits2 = ["🍐", "🥥"];
 const newFruits = fruits.concat(fruits2);
 console.log(newFruits);
+
+console.clear();
+console.log(fruits);
+
+// 5. Searching
+// find the index
+
+// indexOf
+console.log(fruits.indexOf("🍉")); // 0
+console.log(fruits.indexOf("watermelon")); // -1
+
+// includes
+console.log(fruits.includes("🍉")); // true
+console.log(fruits.includes("watermelon")); // false
+
+// lastIndexOf
+console.clear();
+fruits.push("🍉");
+console.log(fruits); // ["🍉", "🍒", "🍊", "🍓", "🍋", "🍉"]
+console.log(fruits.indexOf("🍉")); // 0
+console.log(fruits.lastIndexOf("🍉")); // 5
