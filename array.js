@@ -30,3 +30,37 @@ for (let fruit of fruits) {
 
 // (c) forEach
 fruits.forEach((fruit) => console.log("(c)" + fruit));
+
+// 4. Addition, deletion, copy
+// push: add an item to the end
+fruits.push("🍒", "🍑");
+console.log(fruits);
+
+// pop: remove an item from the end
+fruits.pop();
+console.log(fruits);
+fruits.pop();
+console.log(fruits);
+
+// unshift: add an item from the beginning
+fruits.unshift("🍇", "🍉");
+console.log(fruits);
+
+// add an item from teh beginning
+fruits.shift();
+console.log(fruits);
+
+//❗️note! shift, unshift are SLOWER than pop, push
+
+// splice: remove an item by index position
+fruits.push("🍓", "🍋");
+console.log(fruits);
+fruits.splice(1, 1);
+console.log(fruits);
+fruits.splice(1, 1, "🍒", "🍊");
+console.log(fruits);
+
+// combine two arrays
+const fruits2 = ["🍐", "🥥"];
+const newFruits = fruits.concat(fruits2);
+console.log(newFruits);
