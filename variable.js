@@ -1,6 +1,18 @@
 // 1. Use strict
 // added in ES 5
 // use this for Vanila Javascript
+//It is not a statement, but a literal expression,
+// ignored by earlier versions of JavaScript.
+// The purpose of "use strict" is to indicate that the code should be executed in "strict mode".
+// With strict mode, you can not, for example, use undeclared variables.
+
+// Benifits of using use strict:
+// ㄴ Strict mode eliminates some JavaScript silent errors by changing them to throw errors.
+// ㄴ Strict mode fixes mistakes that make it difficult for JavaScript engines to perform optimizations: strict mode code can sometimes be made to run faster than identical code that’s not strict mode.
+// ㄴ Strict mode prohibits some syntax likely to be defined in future versions of ECMAScript.
+// ㄴ It prevents, or throws errors, when relatively “unsafe” actions are taken (such as gaining access to the global object).
+// ㄴ It disables features that are confusing or poorly thought out.
+// ㄴ Strict mode makes it easier to write “secure” JavaScript.
 "use strict";
 
 // 2. Variable, rw(read/write)
