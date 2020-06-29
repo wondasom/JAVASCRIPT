@@ -40,3 +40,14 @@ function printValue(obj, key) {
 printValue(dasom, "name");
 printValue(dasom, "age");
 
+// 3. Property value and shorthand
+const person1 = { name: "Bob", age: 22 };
+const person2 = { name: "Steve", age: 23 };
+const person3 = { name: "Zoe", age: 41 };
+
+function makePerson(name, age) {
+	return { name, age };
+}
+const person4 = makePerson("Celine", 30);
+console.log(person4);
+
