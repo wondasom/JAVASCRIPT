@@ -65,6 +65,17 @@ console.log(person5);
 console.log("name" in dasom); // true
 console.log("age" in dasom); // true
 console.log("random" in dasom); // false
-console.log(dasom.random) // undefined
+console.log(dasom.random); // undefined
 
+// 6. for..in vs for..of
+// for (key in obj)
+console.clear();
+for (key in dasom) {
+	console.log(key);
+}
 
+// for (value of iterable)
+const array = [1, 2, 3, 4, 5];
+for (value of array) {
+	console.log(value);
+}
