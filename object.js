@@ -23,3 +23,20 @@ console.log(dasom.hasJob);
 
 delete dasom.hasJob;
 console.log(dasom.hasJob);
+
+// 2. Computed properties
+// key should be ALWAYS string
+console.log("computed properties");
+console.log(dasom.name);
+console.log(dasom["name"]);
+dasom["hasJob"] = true;
+console.log(dasom.hasJob);
+
+// ex - when the key is given by the user,
+function printValue(obj, key) {
+	console.log(obj[key]);
+	// console.log(obj.key); -> X
+}
+printValue(dasom, "name");
+printValue(dasom, "age");
+
