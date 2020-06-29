@@ -51,3 +51,12 @@ function makePerson(name, age) {
 const person4 = makePerson("Celine", 30);
 console.log(person4);
 
+// 4. Constructor function
+function Person(name, age) {
+	// this = {};
+	this.name = name;
+    this.age = age;
+    // return this;
+}
+const person5 = new Person("Dave", 31);
+console.log(person5);
