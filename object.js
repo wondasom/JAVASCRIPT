@@ -79,3 +79,36 @@ const array = [1, 2, 3, 4, 5];
 for (value of array) {
 	console.log(value);
 }
+
+// 7. Fun cloning
+// Object.assign(dest, [obj1, obj2, obj3...])
+const user = { name: "dasom", age: "27" };
+const user2 = user;
+user2.name = "coder";
+console.log(user); // 'coder'
+
+// old way
+const user3 = {};
+for (key in user) {
+	user3[key] = user[key];
+}
+console.clear();
+console.log(user3);
+
+// Object.assign(target, source);
+// (1)
+const user4 = {};
+Object.assign(user4, user);
+console.log(user4);
+// (2)
+const user5 = Object.assign({}, user);
+console.log(user5);
+
+// another example
+const fruit1 = { color: "red" };
+const fruit2 = { color: "blue", size: "big" };
+const mixed = Object.assign({}, fruit1, fruit2); // latter one overlaps the previous ones
+console.clear();
+console.log(mixed);
+console.log(mixed.color);
+console.log(mixed.size);
