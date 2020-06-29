@@ -55,8 +55,16 @@ console.log(person4);
 function Person(name, age) {
 	// this = {};
 	this.name = name;
-    this.age = age;
-    // return this;
+	this.age = age;
+	// return this;
 }
 const person5 = new Person("Dave", 31);
 console.log(person5);
+
+// 5. in operator: property existence check (key in obj)
+console.log("name" in dasom); // true
+console.log("age" in dasom); // true
+console.log("random" in dasom); // false
+console.log(dasom.random) // undefined
+
+
