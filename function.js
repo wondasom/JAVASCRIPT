@@ -1,3 +1,4 @@
+"use strict";
 // procedural language vs. object oriented language
 
 // Function
