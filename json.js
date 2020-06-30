@@ -71,3 +71,9 @@ const obj2 = JSON.parse(json, (key, value) => {
 });
 
 console.log(obj2.birthDate.getDate()); // NOW it works!
+
+// 💘 USEFUL SITES 💘
+// 1. JSON Diff checker: http://www.jsondiff.com/
+// 2. JSON Beautifier/editor: https://jsonbeautifier.org/
+// 3. JSON Parser: https://jsonparser.org/
+// 4. JSON Validator: https://tools.learningcontainer.com/json-validator/
