@@ -14,8 +14,6 @@ console.log(fruits[0]); // 🍎
 console.log(fruits[1]); // 🍌
 console.log(fruits[fruits.length - 1]); // 🍌
 
-console.clear();
-
 // 3. Looping over an array
 // print all fruits
 // (a) for
@@ -65,7 +63,7 @@ const fruits2 = ["🍐", "🥥"];
 const newFruits = fruits.concat(fruits2);
 console.log(newFruits);
 
-console.clear();
+// console.clear();
 console.log(fruits);
 
 // 5. Searching
@@ -80,7 +78,7 @@ console.log(fruits.includes("🍉")); // true
 console.log(fruits.includes("watermelon")); // false
 
 // lastIndexOf
-console.clear();
+// console.clear();
 fruits.push("🍉");
 console.log(fruits); // ["🍉", "🍒", "🍊", "🍓", "🍋", "🍉"]
 console.log(fruits.indexOf("🍉")); // 0
