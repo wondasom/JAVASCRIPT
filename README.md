@@ -1,4 +1,4 @@
-# 💻 JAVASCRIPT 
+# 💻 JAVASCRIPT NOTE
 ### Concepts You Need to Know to Master JS
 Reference & Credit: Ellie's [Youtube channel](https://youtu.be/wcsVjmHrUQg)💞
 
