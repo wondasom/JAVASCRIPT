@@ -30,7 +30,7 @@ const rabbit = {
 	name: "tori",
 	color: "white",
 	size: null,
-	birtDate: new Date(),
+	birthDate: new Date(),
 	// jumpArrow: () => {
 	// 	console.log(`${this.name} can jump!`);
 	// }, -> You CANNOT access 'name' when you use ARROW FUNCTION 💘 as a method
@@ -51,4 +51,23 @@ json = JSON.stringify(rabbit, (key, value) => {
 });
 console.log(json);
 
+// 2. JSON to Object
+// parse(obj)
+console.clear();
+json = JSON.stringify(rabbit);
+const obj = JSON.parse(json);
+console.log(obj);
+rabbit.jump();
+// obj.jump(); Uncaught TypeError❗️
 
+console.log(rabbit.birthDate.getDate());
+// console.log(obj.birtDate.getDate()) Uncaught TypeError❗️
+//  ㄴ BECAUSE birthDate IN obj is STRING
+
+// in order to fix this problem, you need to use 'reviver'
+const obj2 = JSON.parse(json, (key, value) => {
+	console.log(`key: ${key}, value: ${value}`);
+	return key === "birthDate" ? new Date(value) : value;
+});
+
+console.log(obj2.birthDate.getDate()); // NOW it works!
