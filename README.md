@@ -1,13 +1,20 @@
 # 💻 JAVASCRIPT NOTE
-### Concepts You Need to Know to Master JS
-Reference & Credit: Ellie's [Youtube channel](https://youtu.be/wcsVjmHrUQg)💞
 
+### Concepts You Need to Know to Master JS
+
+## Reference & Credit
+
+💞 Ellie's
+[Youtube channel:](https://youtu.be/wcsVjmHrUQg)
+[Code Academy:](https://academy.dream-coding.com)
+[Email:](ellie@dream-coding.com)
 
 
 ## 📖 How to Study & Setup
+
 1. Clone the repo locally
 
-2. Link the js file you want to take a look to the ```index.html``` file
+2. Link the js file you want to take a look to the `index.html` file
 
 <img src="https://i.imgur.com/4IHxPhg.png " alt="to link array.js file to index.html file" width="800"/>
 
@@ -17,16 +24,13 @@ Reference & Credit: Ellie's [Youtube channel](https://youtu.be/wcsVjmHrUQg)💞
 
 <img src="https://i.imgur.com/mKpI0kl.png" alt="array.js and console tab are open" width="800"/>
 
-
-
 ## Table of Content (⌛ ...will be added more)
-* variable
-* operator
-* function
-* class
-* object
-* array
-* array APIs (quiz & answer)
-* async
 
-
+-  variable
+-  operator
+-  function
+-  class
+-  object
+-  array
+-  array APIs (quiz & answer)
+-  async
