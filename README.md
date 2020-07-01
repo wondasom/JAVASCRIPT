@@ -4,10 +4,10 @@
 
 ## Reference & Credit
 
-💞 Ellie's
-[Youtube channel:](https://youtu.be/wcsVjmHrUQg)
-[Code Academy:](https://academy.dream-coding.com)
-[Email:](ellie@dream-coding.com)
+💞 Ellie's <br/>
+Youtube Channel: [here](https://youtu.be/wcsVjmHrUQg) <br/>
+Code Academy: [here](https://academy.dream-coding.com) <br/>
+Email: ellie@dream-coding.com
 
 
 ## 📖 How to Study & Setup
