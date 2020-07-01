@@ -16,3 +16,8 @@ function printImmediately(print) {
 }
 printImmediately(() => console.log("hello")); // sync
 
+// 2. Asynchronous callback
+function printWithDelay(print, timeout) {
+	setTimeout(print, timeout);
+}
+printWithDelay(() => console.log("async callback"), 2000); // async
