@@ -29,3 +29,4 @@ promise
 	.finally(() => {
 		console.log("finally");
 	});
+
