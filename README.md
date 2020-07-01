@@ -27,6 +27,6 @@ Reference & Credit: Ellie's [Youtube channel](https://youtu.be/wcsVjmHrUQg)💞
 * object
 * array
 * array APIs (quiz & answer)
-* ...
+* async
 
 
