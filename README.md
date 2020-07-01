@@ -33,4 +33,4 @@ Email: ellie@dream-coding.com
 -  object
 -  array
 -  array APIs (quiz & answer)
--  async
+-  async (callback, promise)
