@@ -4,7 +4,7 @@
 
 ## Reference & Credit
 
-💞 Ellie's <br/>
+💞 Ellie's JavaScript ES6 series in her youtube channel <br/>
 Youtube Channel: [here](https://youtu.be/wcsVjmHrUQg) <br/>
 Code Academy: [here](https://academy.dream-coding.com) <br/>
 Email: ellie@dream-coding.com
