@@ -2,13 +2,6 @@
 
 ### Concepts You Need to Know to Master JS
 
-## Reference & Credit
-
-💞 Ellie's
-[Youtube channel:](https://youtu.be/wcsVjmHrUQg)
-[Code Academy:](https://academy.dream-coding.com)
-[Email:](ellie@dream-coding.com)
-
 
 ## 📖 How to Study & Setup
 
@@ -33,4 +26,13 @@
 -  object
 -  array
 -  array APIs (quiz & answer)
--  async
+-  async (callback, promise)
+
+
+
+## Reference & Credit
+
+💞 Ellie's JavaScript ES6 series in her youtube channel <br/>
+Youtube Channel: [here](https://youtu.be/wcsVjmHrUQg) <br/>
+Code Academy: [here](https://academy.dream-coding.com) <br/>
+Email: ellie@dream-coding.com
