@@ -81,17 +81,18 @@ const stringFive = "5";
 const numberFive = 5;
 
 // == loose equality, with type conversion
-console.log(stringFive == numberFive);
-console.log(stringFive != numberFive);
+console.log(stringFive == numberFive); // true
+console.log(stringFive != numberFive); // false
 
 // === strict equality, no type conversion
-console.log(stringFive === numberFive);
-console.log(stringFive !== numberFive);
+console.log(stringFive === numberFive); // false
+console.log(stringFive !== numberFive); // true
 
 // object equality by reference*
 const dasom1 = { name: "dasom" };
 const dasom2 = { name: "dasom" };
 const dasom3 = dasom1;
+console.log('dasom')
 console.log(dasom1 == dasom2);
 console.log(dasom1 === dasom2);
 console.log(dasom1 === dasom3);

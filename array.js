@@ -44,7 +44,7 @@ console.log(fruits);
 fruits.unshift("🍇", "🍉");
 console.log(fruits);
 
-// add an item from teh beginning
+// remove an item from the beginning
 fruits.shift();
 console.log(fruits);
 
@@ -83,4 +83,3 @@ fruits.push("🍉");
 console.log(fruits); // ["🍉", "🍒", "🍊", "🍓", "🍋", "🍉"]
 console.log(fruits.indexOf("🍉")); // 0
 console.log(fruits.lastIndexOf("🍉")); // 5
-

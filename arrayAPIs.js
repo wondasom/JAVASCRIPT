@@ -32,7 +32,7 @@
 	const q4 = array.slice(2, 5); // ⭕️
 	console.log(`Q4.`);
 	console.log(q4); // [3, 4, 5]
-	// splice vs splice❗️
+	// splice vs slice❗️
 	// ㄴsplice:
 	//     1. returns the REMOVED item(s) in an array
 	//     2. CHANGES the original array
