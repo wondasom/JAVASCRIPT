@@ -19,7 +19,8 @@
 
 ## Table of Content (⌛ ...will be added more)
 
--  variable
+- async vs defer 
+- variable
 -  operator
 -  function
 -  class
