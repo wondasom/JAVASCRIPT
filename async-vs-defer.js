@@ -1,6 +1,6 @@
 // 1. <script> in the head
 <head>
-	<script src='main.js'></script>
+    <script src='main.js'></script>
 </head>
 <body></body>
 // - parsing HTML -> ⛔️ fetching js -> executing js ⛔️️️️ -> parsing HTML (✨page is ready)
@@ -11,7 +11,7 @@
 <head>
 </head>
 <body>
-    <div></div>	
+    <div></div> 
     <script src='main.js'></script>
 </body>
 // - pasing HTML (✨page is ready) -> fetching js -> exeucuting js
@@ -20,7 +20,7 @@
 
 // 3. <script> in the head with 'async' 
 <head>
-	<script async src='main.js'></script>
+    <script async src='main.js'></script>
 </head>
 <body></body>
 // (parallel ⭐️)
@@ -31,7 +31,7 @@
 
 // 4. <script> in the head with 'defer'
 <head>
-	<script defer src='main.js'></script>
+    <script defer src='main.js'></script>
 </head>
 <body></body>
 // (parallel ⭐️)
@@ -40,6 +40,18 @@
 // 👍🏼: 😍 BEST OPTION 
 
 
-// POINT
-// - async: js is executed right after it is fetched
-// - defer: js execution can wait after it is fetched 
+// ️️✨ POINT - async 🆚 defer ✨
+// - async: js is executed RIGHT AFTER it is fetched: fetching -> execution
+// - defer: js execution CAN WAIT after it is fetched: fetching - (can wait) -> execution
+
+
+// ❗️Please Note (1):
+// As a rule, only the simplest scripts are put into HTML. 
+// More complex ones reside in separate files
+// The 👍🏼 benefit of a separate file is that the browser will download it and store it in its cache 🤓.
+// Other pages that reference the same script will take it from the cache instead of downloading it,
+// so the file is actually downloaded only ONCE 🙌🏼.
+// That reduces traffic and makes pages faster ⏩.
+
+// ❗️Please Note (2):
+// A single <script> tag can’t have both the src attribute and code inside.
