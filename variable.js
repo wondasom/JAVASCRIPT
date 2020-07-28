@@ -5,6 +5,8 @@
 // ignored by earlier versions of JavaScript.
 // The purpose of "use strict" is to indicate that the code should be executed in "strict mode".
 // With strict mode, you can not, for example, use undeclared variables.
+// Modern JavaScript supports “classes” and “modules” – advanced language structures (we’ll surely get to them), 
+// that enable use strict automatically. So we don’t need to add the "use strict" directive, if we use them.
 
 // Benifits of using use strict:
 // ㄴ Strict mode eliminates some JavaScript silent errors by changing them to throw errors.
