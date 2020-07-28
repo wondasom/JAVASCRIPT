@@ -122,3 +122,14 @@ console.log(`value: ${text} type: ${typeof text}`);
 text = "8" / "2";
 console.log(`value: ${text} type: ${typeof text}`);
 console.log(text.charAt(0)); // error
+
+
+// ✨ Name things right
+// Some good-to-follow rules are:
+// 1. Use human-readable names like userName or shoppingCart.
+// 2. Stay away from abbreviations or short names like a, b, c, unless you really know what you’re doing.
+// 3. Make names maximally descriptive and concise. 
+//   ㄴ Examples of bad names are data and value. Such names say nothing. 
+//   ㄴ It’s only okay to use them if the context of the code makes it exceptionally obvious which data or value the variable is referencing.
+// 4. Agree on terms within your team and in your own mind. 
+//   ㄴ If a site visitor is called a “user” then we should name related variables currentUser or newUser instead of currentVisitor or newManInTown.
