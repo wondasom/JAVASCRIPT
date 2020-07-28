@@ -44,7 +44,7 @@ const maxNumber = 5;
 // Note!
 // Immutable data types: primitive types, frozen objects (i.e. object.freeze())
 // Mutable data types: all objects by default are mutable in JS
-// favor immutable data type always for a few reasons:
+// favor 💓 immutable data type always for a few reasons:
 //    - security
 //    - thread safety
 //    - reduce human mistakes
@@ -59,7 +59,7 @@ const size = 17.1; //decimal number
 console.log(`value:${count}, type: ${typeof count}`);
 console.log(`value:${size}, type: ${typeof size}`);
 
-// number - special numeric values = infinity, -infinity, NaN
+// 1) number - special numeric values = infinity, -infinity, NaN
 // always validate the number before going to computation
 const infinity = 1 / 0;
 const negativeInfinity = -1 / 0;
@@ -68,20 +68,21 @@ console.log(infinity);
 console.log(negativeInfinity);
 console.log(nAn);
 
-// bigInt (fairly new, don't use it yet) - available in Chrome, Firefox
+// 2) bigInt (fairly new, don't use it yet) - available in Chrome, Firefox
 const bigInt = 1234567890123456789012345678901234567890n; // over (-2**53) ~ (2**53)
 console.log(`value: ${bigInt} type: ${typeof bigInt}`);
 Number.MAX_SAFE_INTEGER;
 
-// string
+// 3) string
 const char = "c";
 const brendan = "brendan";
 const greeting = "hello" + brendan;
 console.log(`value: ${greeting} type: ${typeof greeting}`);
-const helloBob = `hi ${brendan}!`; // template literals (string)
+const helloBob = `hi ${brendan}!`; 
+// ☝🏼 template literals (only with backticks): the expression inside ${…} is evaluated and the result becomes a part of the string.
 console.log(`value: ${helloBob} type: ${typeof helloBob}`);
 
-// boolean
+// 4) boolean
 // false: 0, null, undefined, NaN, ''
 // true: any other value
 const canRead = true;
@@ -89,15 +90,16 @@ const test = 3 < 1; // false
 console.log(`value: ${canRead} type: ${typeof canRead}`);
 console.log(`value: ${test} type: ${typeof test}`);
 
-// null
+// 5) null
 let nothing = null;
 console.log(`value: ${nothing} type: ${typeof nothing}`);
 
-// undefined
+// 6) undefined
+// The meaning of undefined is “value is not assigned”.
 let x;
 console.log(`value: ${x} type: ${typeof x}`);
 
-// symbol, create unique identifiers for objects
+// 7) symbol, create unique identifiers for objects
 const symbol1 = Symbol("id");
 const symbol2 = Symbol("id");
 console.log(symbol1 === symbol2); // true
@@ -106,7 +108,7 @@ const gSymbol2 = Symbol.for("id");
 console.log(gSymbol1 === gSymbol2); // true
 console.log(`value: ${symbol1.description} type: ${typeof symbol1}`);
 
-// object, real-life object, data structure
+// 8) object, real-life object, data structure
 const dasom = { name: "dasom", age: "27" };
 dasom.age = 20;
 
@@ -133,3 +135,34 @@ console.log(text.charAt(0)); // error
 //   ㄴ It’s only okay to use them if the context of the code makes it exceptionally obvious which data or value the variable is referencing.
 // 4. Agree on terms within your team and in your own mind. 
 //   ㄴ If a site visitor is called a “user” then we should name related variables currentUser or newUser instead of currentVisitor or newManInTown.
+
+
+// 🎯 typeof - examples
+typeof undefined // "undefined"
+
+typeof 0 // "number"
+
+typeof 10n // "bigint"
+
+typeof true // "boolean"
+
+typeof "foo" // "string"
+
+typeof Symbol("id") // "symbol"
+
+typeof Math // "object"  (1)
+
+typeof null // "object"  (2)
+
+typeof alert // "function"  (3)
+
+// (1) 
+// Math is a built-in object that provides mathematical operations. 
+// (2)
+// The result of typeof null is "object". That’s an officially recognized error in typeof behavior, coming from the early days of JavaScript and kept for compatibility.
+// Definitely, null is not an object. It is a special value with a separate type of its own.
+// (3)
+// The result of typeof alert is "function", because alert is a function. 
+// Functions belong to the object type. But typeof treats them differently, returning "function". 
+// That also comes from the early days of JavaScript. 
+// Technically, such behavior isn’t correct, but can be convenient in practice.
