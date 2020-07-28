@@ -112,7 +112,7 @@ console.log(`value: ${symbol1.description} type: ${typeof symbol1}`);
 const dasom = { name: "dasom", age: "27" };
 dasom.age = 20;
 
-// 5. Dynamic typing: dynamically typed language (type change occuring during the runtime)
+// 5. Dynamic Typing: dynamically typed language (type change occuring during the runtime)
 // cf. C or Java: statically typed language
 let text = "hello";
 console.log(text.charAt(0));
@@ -124,6 +124,24 @@ console.log(`value: ${text} type: ${typeof text}`);
 text = "8" / "2";
 console.log(`value: ${text} type: ${typeof text}`);
 console.log(text.charAt(0)); // error
+
+// 5-1. String Conversion
+// 5-2. Numeric Conversion
+//   ㄴ undefined -> NaN
+//   ㄴ null -> 0
+//   ㄴ true -> 1
+//   ㄴ false -> 0
+//   ㄴ string(if it is empty) -> 0
+//   ㄴ string(if it is numeric character) -> number
+//   ㄴ string(if it is a combination of numeric character and string) -> NaN
+// 5-3. Boolean Conversion
+//   ㄴ 0 -> false
+//   ㄴ empty string -> false
+//   ㄴ null -> false
+//   ㄴ undefined -> false
+//   ㄴ NaN -> false
+//   ㄴ other values -> true
+
 
 
 // ✨ Name things right
