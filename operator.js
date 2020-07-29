@@ -1,10 +1,20 @@
 "use strict";
+// 0. Terms
+// - operand : is what operators are applied to
+// - unary : an operator is unary if it has a single operand
+// - binary : an operator is binary if it has two operands
+
 // 1. String concatenation
 console.log("my" + "cat");
 console.log(1 + 2);
 console.log(`string literals: 1 + 2 = ${1 + 2}`);
 console.log("Dasom's book");
 console.log("Dasom's \nbook");
+// ❗️ ONLY in case of + operator(add)
+// Note: if any of the operands is a string, then the other one is CONVERTED to a string too
+// -> string concatenation happens
+console.log("1" + 2); // '12'
+console.log(2 + 2 + "1"); // '41' not '221'
 
 // 2. Numeric operators
 console.log(1 + 1); // add
@@ -13,6 +23,22 @@ console.log(1 / 1); // divide
 console.log(1 * 1); // multiply
 console.log(5 % 2); // remainder
 console.log(2 ** 3); // exponentiation
+// ❗️ EXCEPT the + operator(add), other arithmetic operators work only with numbers
+// and always CONVERT their operands to numbers
+console.log(6 - "2"); // 4
+// ❗️ unary + operator(add)
+// ㄴ the unary plus operator does not do anything to numbers 🔢
+// ㄴ however, it the operand is not a number, the unary plus operator converts it into a number
+console.log(+true); // 1
+console.log(+""); // 0
+// this is especially useful in a situation where you get string values from the form fields and want to sum them
+// example
+let oranges = "3";
+let apples = "2";
+console.log(+oranges + +apples); // 5
+// ☝🏼 both values converted to numbers before the binary plus
+// it is same as
+console.log(Number(oranges) + Number(apples)); // 5
 
 // 3. Increment add decrement operators
 let counter = 2;
@@ -80,6 +106,9 @@ console.log(!value1);
 const stringFive = "5";
 const numberFive = 5;
 
+// = assignment
+// it is also an operator (with the very low priority of 3 in the precedence table)
+
 // == loose equality, with type conversion
 console.log(stringFive == numberFive); // true
 console.log(stringFive != numberFive); // false
@@ -92,7 +121,7 @@ console.log(stringFive !== numberFive); // true
 const dasom1 = { name: "dasom" };
 const dasom2 = { name: "dasom" };
 const dasom3 = dasom1;
-console.log('dasom')
+console.log("dasom");
 console.log(dasom1 == dasom2);
 console.log(dasom1 === dasom2);
 console.log(dasom1 === dasom3);
