@@ -16,7 +16,6 @@ console.log("Dasom's \nbook");
 console.log('1' + 2); // '12'
 console.log(2 + 2 + '1'); // '41' not '221'
 
-
 // 2. Numeric operators
 console.log(1 + 1); // add
 console.log(1 - 1); // subtract
@@ -41,7 +40,6 @@ console.log(+oranges + +apples); // 5
 // it is same as
 console.log(Number(oranges) + Number(apples)); // 5
 
-
 // 3. Increment add decrement operators
 let counter = 2;
 const preIncrement = ++counter;
@@ -61,7 +59,6 @@ const postDecrement = counter--;
 // counter = counter - 1;
 console.log(`postDecrement: ${postDecrement}, counter: ${counter}`);
 
-
 // 4. Assignment operators
 let x = 3;
 let y = 6;
@@ -69,7 +66,6 @@ x += y; // x = x + y;
 x -= y; // x = x - y;
 x *= y; // x = x * y;
 x /= y; // x = x / y;
-
 
 // 5. Comparison operators
 // all comparison operators return a boolean value
@@ -98,17 +94,16 @@ console.log(false == 0); // true
 console.log(null == undefined); // true
 console.log(null === undefined); // false
 
-
 // 6. Logical operators: || (or), && (and), ! (not)
 const value1 = false;
 const value2 = 4 < 2; // false
 
 // || (or), finds the FIRST truthy value
-// >>> simplest value should come first(heavy operation should be excuted at last)
+// >>> simplest value should come FIRST(👉🏼 heavy operation should be excuted at last)
 console.log(`or: ${value1 || value2 || check()}`);
 
 // && (and), finds the FIRST falsy value
-// >>> simplest value should come first(heavy operation should be excuted at last)
+// >>> simplest value should come FIRST(👉🏼 heavy operation should be excuted at last)
 console.log(`and: ${value1 && value2 && check()}`);
 
 // often used to compress long if-statement
@@ -127,7 +122,6 @@ function check() {
 
 // ! (not)
 console.log(!value1);
-
 
 // 7. Equality
 const stringFive = '5';
@@ -166,7 +160,6 @@ console.log('' === false);
 console.log(null == undefined);
 console.log(null === undefined);
 
-
 // 8. Conditional operators: if
 // if, else if, else
 const name = 'dasom';
@@ -181,6 +174,16 @@ if (name === 'dasom') {
 // 9. Ternary operator: ?
 // condition ? value1 : value2
 console.log(name === 'dasom' ? 'yes' : 'no');
+// multiple '?'
+let age = 20;
+let message =
+	age < 3
+		? 'Hi, baby!'
+		: age < 18
+		? 'Hello!'
+		: age < 100
+		? 'Greetings!'
+		: 'What an unusual age!';
 
 // 10. Switch statement
 // use for multiple if checks
