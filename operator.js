@@ -191,8 +191,7 @@ let message =
 let firstName = null;
 let lastName = null;
 let nickName = 'randomForeigner';
-// shoe the first not-null/undefined value
-console.log('HERE');
+// show the first not-null/undefined value
 console.log(firstName ?? lastName ?? nickName); // -> 'randomForeigner'
 //  || 🆚 ??
 let height = 0;
