@@ -3,7 +3,7 @@
 ### Concepts You Need to Know to Master JS
 
 
-## 📖 How to Study & Setup
+## How to Study & Setup 📖 
 
 1. Clone the repo locally
 
@@ -31,7 +31,7 @@
 
 
 
-## Reference & Credit
+## Reference & Credit 👏🏼
 
 1. [Ellie's JavaScript ES6 series](https://youtu.be/wcsVjmHrUQg) 
 
