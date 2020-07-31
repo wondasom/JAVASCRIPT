@@ -1,6 +1,6 @@
 # 💻 JAVASCRIPT NOTE
 
-### Concepts You Need to Know to Master JS
+Concepts You Need to Know to Master JS
 
 
 ## How to Study & Setup 📖 
