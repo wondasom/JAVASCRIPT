@@ -185,7 +185,25 @@ let message =
 		? 'Greetings!'
 		: 'What an unusual age!';
 
-// 10. Switch statement
+// 10. Nullish coalescing operator: ??
+// leftExpr ?? rightExpr
+// ⚠️ this is a recent addition to the language. Old browsers may need polyfills
+let firstName = null;
+let lastName = null;
+let nickName = 'randomForeigner';
+// shoe the first not-null/undefined value
+console.log('HERE');
+console.log(firstName ?? lastName ?? nickName); // -> 'randomForeigner'
+//  || 🆚 ??
+let height = 0;
+console.log(height || 100); // -> 100
+console.log(height ?? 100); // -> 0
+// this is because || takes 0 as false, ?? takes 0 as defined(or not-null) value
+// when we'd like to treat null/defined differently from 0, it matters a lot
+// CONSIDER adding parentheses when you use ?? because the precedence of ??? is rather low
+// which means ?? is evaluated after most other operators, but before = and ?
+
+// 11. Switch statement
 // use for multiple if checks
 // use for enum-like value check
 // use for multiple type chekcs in TS
@@ -203,7 +221,7 @@ switch (browser) {
 		break;
 }
 
-// 11. Loops
+// 12. Loops
 // while loop, while the condition is truthy,
 // body code is excuted.
 let i = 3;
