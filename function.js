@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 // procedural language vs. object oriented language
 
 // Function
@@ -13,31 +13,31 @@
 // e.g. createCardAndPoint -> createCard, createPoint
 // function is object in JS
 function printHello() {
-	console.log("hello");
+	console.log('hello');
 }
 printHello();
 
 function log(message) {
 	console.log(message);
 }
-log("Hello");
+log('Hello');
 log(234);
 
 // 2. Parameters
 // primitive parameters: passed by value
 // object parameters: pased by reference
 function changeName(obj) {
-	obj.name = "coder";
+	obj.name = 'coder';
 }
-const dasom = { name: "Dasom" };
+const dasom = { name: 'Dasom' };
 changeName(dasom);
 console.log(dasom);
 
 // 3. Default parameters (added in ES6)
-function showMessage(message, from = "unknown") {
+function showMessage(message, from = 'unknown') {
 	console.log(`${message} by ${from}`);
 }
-showMessage("Hi!");
+showMessage('Hi!');
 
 // 4. Rest parameters (added in ES6)
 function printAll(...args) {
@@ -52,17 +52,17 @@ function printAll(...args) {
 	// (3)
 	args.forEach((arg) => console.log(arg));
 }
-printAll("front-end", "React", "Dasom");
+printAll('front-end', 'React', 'Dasom');
 
 // 5. Local Scope
-let globalMessage = "global"; // global variable
+let globalMessage = 'global'; // global variable
 function printMessage() {
-	let message = "hello";
+	let message = 'hello';
 	console.log(message); // local variable
 	console.log(globalMessage);
 	function printAnother() {
 		console.log(message);
-		let childMessage = "hello";
+		let childMessage = 'hello';
 	}
 	// console.log(childMessage); // error
 	return undefined; // default
@@ -95,17 +95,19 @@ function upgradeUser(user) {
 }
 
 // First-class function
-// functions are treated like any other variable
+// functions are treated like any other variables, the values representing "actions"
 // can be assigned as a value to variable
 // can be passed as an argument to other functions
 // can be returned by another function
 
 // 1. Function expression
-// a function declaration can be called or ealier than it is defined. (hoisted)
+// a function declaration can be called or ealier than it is defined. (hoisted)❗️
 // a function expression is created when the execution reaches it.
+// In most cases when we need to declare a function, ✨ a Function Declaration is preferable, because it is visible prior to the declaration itself.
+// That gives us more flexibility in code organization, and is usually more readable.
 const print = function() {
 	// anonymous function
-	console.log("print");
+	console.log('print');
 };
 print();
 const printAgain = print;
@@ -116,7 +118,7 @@ console.log(sumAgain(1, 3));
 // 2. Callback function using function expression
 function randomQuiz(answer, printYes, printNo) {
 	// in this case, callback functions are printYes and printNo
-	if (answer === "love you") {
+	if (answer === 'love you') {
 		printYes();
 	} else {
 		printNo();
@@ -133,8 +135,8 @@ const printNo = function print() {
 	console.log(`no!`);
 	// print() <-- recursion, will cause call stack
 };
-randomQuiz("wrong", printYes, printNo);
-randomQuiz("love you", printYes, printNo);
+randomQuiz('wrong', printYes, printNo);
+randomQuiz('love you', printYes, printNo);
 
 // Arrow function
 // always anonymous
@@ -165,19 +167,19 @@ const simpleMultiply = (a, b) => {
 // solution
 const calculator = (command, a, b) => {
 	switch (command) {
-		case "add":
+		case 'add':
 			return a + b;
 			break;
-		case "substract":
+		case 'substract':
 			return a - b;
 			break;
-		case "divide":
+		case 'divide':
 			return a / b;
 			break;
-		case "multiply":
+		case 'multiply':
 			return a * b;
 			break;
-		case "remainder":
+		case 'remainder':
 			return a % b;
 			break;
 		default:
