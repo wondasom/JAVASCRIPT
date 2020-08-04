@@ -1,9 +1,9 @@
 # 💻 JAVASCRIPT NOTE
 
-### Concepts You Need to Know to Master JS
+Concepts You Need to Know to Master JS
 
 
-## 📖 How to Study & Setup
+## How to Study & Setup 📖 
 
 1. Clone the repo locally
 
@@ -31,9 +31,9 @@
 
 
 
-## Reference & Credit
+## Reference & Credit 👏🏼
 
-💞 Ellie's JavaScript ES6 series in her youtube channel <br/>
-Youtube Channel: [here](https://youtu.be/wcsVjmHrUQg) <br/>
-Code Academy: [here](https://academy.dream-coding.com) <br/>
-Email: ellie@dream-coding.com
+1. [Ellie's JavaScript ES6 series](https://youtu.be/wcsVjmHrUQg) 
+
+2. [JAVASCRIPT INFO](https://javascript.info/)
+
