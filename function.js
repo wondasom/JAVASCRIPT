@@ -149,11 +149,13 @@ const add = function(a, b) {
 	return a + b;
 };
 const simpleAdd = (a, b) => a + b;
+// in case of arrow function, you need a block(curly braces) if the body isn't inline.
+// When using curly braces, "return" is needed
 const simpleMultiply = (a, b) => {
+	// the curly brace opens a multiline function
 	// do something
-	return a * b;
+	return a * b; // if we use curly braces, then we need an explicit "return"
 };
-// in case of arrow function, you need a block if the body isn't inline.
 
 // IIFE: Immediately Invoked Function Expression
 (function hello() {
