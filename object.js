@@ -123,5 +123,4 @@ console.log(mixed);
 console.log(mixed.color);
 console.log(mixed.size);
 
-
-// Reading of rObjet copying, reference: https://javascript.info/object-copy
+// Reading of Obejct copying, reference: https://javascript.info/object-copy
