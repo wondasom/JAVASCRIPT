@@ -85,10 +85,10 @@ for (key in dasom) {
 }
 
 // for (value of iterable)
-const array = [1, 2, 3, 4, 5];
-for (value of array) {
-	console.log(value);
-}
+// const array = [1, 2, 3, 4, 5];
+// for (value of array) {
+// 	console.log(value);
+// }
 
 // 7. Fun cloning
 // Object.assign(dest, [obj1, obj2, obj3...])
@@ -124,3 +124,21 @@ console.log(mixed.color);
 console.log(mixed.size);
 
 // Reading of Obejct copying, reference: https://javascript.info/object-copy
+
+// 8. Optional Chaining ?.
+// ㄴ not an operator
+// ㄴ but a special syntax construct(that also works with functions and square brackets)
+// The optional chaining ?. is an error-proof way to access nested object properties, even if an intermediate property doesn't exist.
+// Before ?. appeared in the language, the && operator was used to work around that
+
+let newUser = {};
+console.log('?.');
+console.log(user?.address?.street); // undefined(no error)
+// Reading the address with newUser.address works even if newUser object doesn't exist.
+
+//⚠️ Don't overuse the optional chaining
+// Use ?. only where it is okay that something doesn't exist.
+// For example, if according to our business logic, newUser object must be there, but address is optional
+// then newUser.address?.street would be better than newUser?.address?.street
+
+//⚠️ The variable before ?. must be declared
