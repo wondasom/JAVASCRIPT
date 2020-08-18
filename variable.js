@@ -149,6 +149,16 @@ console.log(text.charAt(0)); // error
 //   ㄴ NaN -> false
 //   ㄴ other values -> true
 
+// 6. Methods of Primitives
+// ㄴ Primitives are still primitives. A single value, as desired.
+// ㄴ The language allows access to methods and properties of strings, numbers and symbols.
+// ㄴ In order for that to work, a special "object wrapper" that provide the extra functionality is created, and then destroyed
+// object wrappers: String, Number, Boolean and Symbol
+let str = 'nice to meet you';
+console.log(str.toUpperCase()); // NICE TO MEET YOU
+let num = 1.2345;
+console.log(num.toFixed(2)); // 1.23
+
 // ✨ Name things right
 // Some good-to-follow rules are:
 // 1. Use human-readable names like userName or shoppingCart.
