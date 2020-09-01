@@ -113,3 +113,12 @@ let users = [
 ];
 let user = users.find((item) => item.id === 1);
 console.log(user.name); // Danny
+
+
+// 6. Transform an array
+// map(func) ✨
+// it calls the function for each element of the array and returns the array of results
+// sort(func)
+// reverse()
+// split/join
+// reduce(func, initial)
