@@ -64,6 +64,7 @@ let arr = ['I', 'study', 'JavaScript', 'right', 'now'];
 // remove 3 first elements and replace them with another
 arr.splice(0, 3, "Let's", 'dance');
 console.log(arr); // now ["Let's", "dance", "right", "now"]
+// example (3)
 // ❗️splice returns the array of removed elements ️❗️
 let arr3 = [0, 1, 2, 3, 4];
 let arr4 = arr3.splice(0, 2);
