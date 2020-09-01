@@ -70,6 +70,11 @@ let arr3 = [0, 1, 2, 3, 4];
 let arr4 = arr3.splice(0, 2);
 console.log(arr3); // [2, 3, 4] result after splice
 console.log(arr4); // [0, 1] ❗️removed elements
+// example (4)
+// The splice method is lso able to insert the elements without any removals.
+// For that, we need to set deleteCount to 0
+let arr5 = ['I', 'study', 'JavaScript'];
+console.log(arr5.splice(2, 0, 'a programming language')); // 'I', 'study', 'a programming language'
 
 // combine two arrays
 const fruits2 = ['🍐', '🥥'];
@@ -96,3 +101,4 @@ fruits.push('🍉');
 console.log(fruits); // ["🍉", "🍒", "🍊", "🍓", "🍋", "🍉"]
 console.log(fruits.indexOf('🍉')); // 0
 console.log(fruits.lastIndexOf('🍉')); // 5
+
