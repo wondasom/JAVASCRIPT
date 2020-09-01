@@ -102,3 +102,14 @@ console.log(fruits); // ["🍉", "🍒", "🍊", "🍓", "🍋", "🍉"]
 console.log(fruits.indexOf('🍉')); // 0
 console.log(fruits.lastIndexOf('🍉')); // 5
 
+// find
+// Imagine we have an array of objects.
+// If we need to find an object with the specific condition
+// we can use arr.find(fn) method
+let users = [
+	{ id: 1, name: 'Danny' },
+	{ id: 2, name: 'John' },
+	{ id: 3, name: 'Mike' }
+];
+let user = users.find((item) => item.id === 1);
+console.log(user.name); // Danny
