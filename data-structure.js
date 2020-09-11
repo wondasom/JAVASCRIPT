@@ -51,3 +51,20 @@ set.add(roxane);
 set.add(dasom); // -- does not count becuase it is not unique
 set.add(roxane); // -- does not count becuase it is not unique
 console.log(set.size); // 3
+
+// 5. WeakMap
+// - The first difference from Map is that WeakMap keys must be objects, not primitive values
+// - 👍🏼 Use case: additional data
+// ㄴ The main area of application for WeakMap is an additional data storage.
+// ㄴ If we’re working with an object that “belongs” to another code, maybe even a third-party library,
+// ㄴ and would like to store some data associated with it, that should only exist while the object is alive
+// ㄴ then WeakMap is exactly what’s needed.
+// ㄴ We put the data to a WeakMap, using the object as the key, and when the object is garbage collected, that data will automatically disappear as well.
+// - 👍🏼 Use case: caching
+// ㄴ when a function result should be remembered (“cached”), so that future calls on the same object reuse it.
+
+
+// 6. WeakSet
+// - It is analogous to Set, but we may only add objects to WeakSet (not primitives).
+// - An object exists in the set while it is reachable from somewhere else.
+// - Like Set, it supports add, has and delete, but not size, keys() and no iterations.
