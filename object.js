@@ -142,3 +142,29 @@ console.log(user?.address?.street); // undefined(no error)
 // then newUser.address?.street would be better than newUser?.address?.street
 
 //⚠️ The variable before ?. must be declared
+
+// 9. Transforming Objects
+// ㄴ For plain objects, you can use the following methods
+// ㄴ Object.keys(obj), Object.values(obj), Object.entries(obj)
+console.log('example for object transformation 👇🏼');
+let skills = {
+	html: 90,
+	css: 90,
+	javascript: 70
+};
+console.log(Object.keys(skills)); // 'html', 'css', 'javascript'
+console.log(Object.values(skills)); // 90, 90, 70
+console.log(Object.entries(skills)); // [["html", 90], ["css", 90], ["javascript", 70]]
+
+// ㄴ Objects lack many methods, such as map(), filter(), that exist for arrays
+// ㄴ But we can transform an object to an array and then do the operation and make it back to the object
+// ㄴ Object.entries(obj) / Object.fromEntries(array)
+let prices = {
+	peach: 3,
+	orange: 2,
+	cherry: 1
+};
+let doublePrices = Object.fromEntries(
+	Object.entries(prices).map(([key, value]) => [key, value * 2])
+);
+console.log(doublePrices.peach); // 6
