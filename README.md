@@ -19,7 +19,6 @@ Essential JS Concepts & Topics
 
 ## Table of Content (⌛ ...will be added more)
 
-- async vs defer 
 - variable
 -  operator
 -  function
@@ -27,7 +26,15 @@ Essential JS Concepts & Topics
 -  object
 -  array
 -  array APIs (quiz & answer)
--  async (callback, promise)
+-  async 
+-  - callback
+-  - promise
+-  async vs defer 
+-  related topics
+-  - Node.js
+-  -  json
+-  data-structure
+
 
 
 
