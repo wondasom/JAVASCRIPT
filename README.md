@@ -25,14 +25,16 @@ Essential JS Concepts & Topics
 -  class
 -  object
 -  array
--  array APIs (quiz & answer)
+   -  array
+   -  array APIs (quiz & answer)
+   -  array-destructuring
 -  async 
--  - callback
--  - promise
+   - callback
+   - promise
 -  async vs defer 
 -  related topics
--  - Node.js
--  -  json
+   - Node.js
+   -  json
 -  data-structure
 
 
