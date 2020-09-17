@@ -24,6 +24,8 @@ Essential JS Concepts & Topics
 -  function
 -  class
 -  object
+   -  object
+   -  object-destructuring
 -  array
    -  array
    -  array APIs (quiz & answer)
