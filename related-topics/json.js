@@ -10,25 +10,24 @@
 //  ㄴ easy to read
 //  ㄴ key - value pairs { key : value }
 //  ㄴ used for serialization and transmission of data between the network connection
-//  ㄴ independent programming language and platform ❗️
+//  ㄴ data-only language-independent specification❗️
+// ⚠️ JSON-encoded object has several important differences from the object literal:
+// (1) strings use double quotes
+// (2) object property names are double-quoted (ex: "age":30)
 
 // JSON study point ✨ - serialize & deserialize
 
-// 1. Object to JSON
+// 1. JSON.stringify()
+// Object -> JSON
 // stringify(obj)
 // *overloading :
 // Overloading allows different methods to have the same name,
 // but different signatures
 // where the signature can differ by the number of input parameters or type of input parameters or both.
-let json = JSON.stringify(true);
-console.log(json); // true
-
-json = JSON.stringify(["apple", "banana"]);
-console.log(json);
 
 const rabbit = {
-	name: "tori",
-	color: "white",
+	name: 'tori',
+	color: 'white',
 	size: null,
 	birthDate: new Date(),
 	// jumpArrow: () => {
@@ -39,21 +38,60 @@ const rabbit = {
 	}
 };
 
-json = JSON.stringify(rabbit);
-console.log(json);
+let rabbitJSON;
+rabbitJSON = JSON.stringify(rabbit);
+console.log(rabbitJSON);
 
-json = JSON.stringify(rabbit, ["name", "color"]);
-console.log(json);
+// excluding and transforming
+// you can add a space as the third parameter for pretty formatting
+rabbitJSON = JSON.stringify(rabbit, ['name', 'color'], 2);
+console.log(rabbitJSON);
 
-json = JSON.stringify(rabbit, (key, value) => {
+rabbitJSON = JSON.stringify(rabbit, (key, value) => {
 	console.log(`key: ${key}, value: ${value}`);
-	return key === "name" ? "dasom" : value;
+	return key === 'name' ? 'dasom' : value;
 });
-console.log(json);
+console.log(rabbitJSON);
 
-// 2. JSON to Object
+// ⚠️ JSON.stringify can be appliced to primitives as well
+// (1) boolean
+let booleanJSON = JSON.stringify(true);
+console.log(booleanJSON); // true
+// (2) array
+let arrayJSON = JSON.stringify(['apple', 'banana']);
+console.log(arrayJSON);
+
+// ⚠️ data-only language-independent specification
+// ㄴ therefore, some JS-specific properties are skippied by JSON.stringify
+// ex: function properties, symbolic properties, properties that store undefied
+
+// ⚠️ toJSON
+console.log(`👇🏼toJSON`);
+let room1 = {
+	number: 7
+};
+let meeting = {
+	title: 'MY BIRTHDAY PARTY',
+	room1
+};
+console.log(JSON.stringify(meeting));
+
+room2 = {
+	number: 7,
+	toJSON() {
+		return this.number;
+	}
+};
+let meetup = {
+	title: 'MY BIRTHDAY PARTY',
+	room2
+};
+console.log(JSON.stringify(room2));
+console.log(JSON.stringify(meetup));
+
+// 2. JSON.parse()
+// JSON to Object
 // parse(obj)
-console.clear();
 json = JSON.stringify(rabbit);
 const obj = JSON.parse(json);
 console.log(obj);
@@ -67,7 +105,7 @@ console.log(rabbit.birthDate.getDate());
 // in order to fix this problem, you need to use 'reviver'
 const obj2 = JSON.parse(json, (key, value) => {
 	console.log(`key: ${key}, value: ${value}`);
-	return key === "birthDate" ? new Date(value) : value;
+	return key === 'birthDate' ? new Date(value) : value;
 });
 
 console.log(obj2.birthDate.getDate()); // NOW it works!
