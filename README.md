@@ -22,6 +22,8 @@ Essential JS Concepts & Topics
 - variable
 -  operator
 -  function
+   -  function-basic
+   -  recursion
 -  class
 -  object
    -  object
