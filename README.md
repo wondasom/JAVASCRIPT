@@ -24,6 +24,7 @@ Essential JS Concepts & Topics
 -  function
    -  function-basic
    -  recursion
+   -  closure
 -  class
 -  object
    -  object
@@ -41,6 +42,7 @@ Essential JS Concepts & Topics
    -  json
 -  data-structure
 -  date-and-time
+-  rest-and-spread
 
 
 
