@@ -1,4 +1,4 @@
-# Note.js
+# Note.js ⚡️
 
 Essential JS Concepts & Topics
 
