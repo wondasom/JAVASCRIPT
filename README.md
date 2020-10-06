@@ -1,4 +1,4 @@
-# 💻 JAVASCRIPT NOTE
+# Note.js
 
 Essential JS Concepts & Topics
 
