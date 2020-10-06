@@ -3,7 +3,7 @@
 Essential JS Concepts & Topics
 
 
-## How to Study & Setup 📖 
+## How to Study & Setup 📖 ✅
 
 1. Clone the repo locally
 
@@ -43,8 +43,6 @@ Essential JS Concepts & Topics
 -  data-structure
 -  date-and-time
 -  rest-and-spread
-
-
 
 
 ## Reference & Credit 👏🏼
