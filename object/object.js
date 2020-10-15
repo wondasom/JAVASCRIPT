@@ -152,9 +152,26 @@ let skills = {
 	css: 90,
 	javascript: 70
 };
-console.log(Object.keys(skills)); // 'html', 'css', 'javascript'
-console.log(Object.values(skills)); // 90, 90, 70
+console.log(Object.keys(skills)); // ['html', 'css', 'javascript']
+console.log(Object.values(skills)); // [90, 90, 70]
 console.log(Object.entries(skills)); // [["html", 90], ["css", 90], ["javascript", 70]]
+
+const dogs = {
+	dukong: {
+		age: 5,
+		color: 'white'
+	},
+	hyori: {
+		age: 2,
+		color: 'white'
+	},
+	jayul: {
+		age: 2,
+		color: 'brown'
+	}
+};
+console.log(Object.keys(dogs)); // ["dukong", "hyori", "jayul"]
+console.log(Object.values(dogs)) // [{...}, {...}, {...},]
 
 // ㄴ Objects lack many methods, such as map(), filter(), that exist for arrays
 // ㄴ But we can transform an object to an array and then do the operation and make it back to the object
