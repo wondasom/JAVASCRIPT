@@ -103,7 +103,8 @@ function upgradeUser(user) {
 // 1. Function expression
 // a function declaration can be called or ealier than it is defined. (hoisted)❗️
 // a function expression is created when the execution reaches it.
-// In most cases when we need to declare a function, ✨ a Function Declaration is preferable, because it is visible prior to the declaration itself.
+// In most cases when we need to declare a function,
+// ✨ a Function Declaration is preferable, because it is visible prior to the declaration itself.
 // That gives us more flexibility in code organization, and is usually more readable.
 const print = function() {
 	// anonymous function
@@ -188,3 +189,55 @@ const calculator = (command, a, b) => {
 			throw Error(`unknown command`);
 	}
 };
+
+// Function Object
+// in JS, functions are objects - 'action object'
+// therefore, functions have properties like objects
+// (1) "name" property
+function sayHi() {
+	console.log('hi');
+}
+console.log(sayHi.name); // sayHi
+
+// (2) "length" property
+function f1() {
+	console.log('f3');
+}
+console.log(f1.length); // 0
+function f2(a) {}
+console.log(f2.length); // 1
+function f3(a, b) {}
+console.log(f3.length); // 2
+
+// (3) custom properties
+function greeting() {
+	console.log('I am a function!');
+	greeting.counter++;
+}
+greeting.counter = 0;
+greeting();
+greeting();
+greeting();
+console.log(`function 'greeting' has been called ${greeting.counter} times`);
+// ⚠️ A property is not a variable (variables =/= function properties)
+// which means
+// - even if we can TREAT a function as an object and STORE properties
+// - BUT It does not have any effect on its execution
+
+// Named Function Expression, NFE
+let funWithoutName = function(name) {
+	console.log(`Hi! My name is ${name}.`);
+};
+let funWithName = function intro(name) {
+	if (name) {
+		console.log(`Hi! My name is ${name}.`);
+	} else {
+		console.log(`Hi!`);
+	}
+};
+
+funWithName('Dasom'); // Hi! My name is Dasom
+funWithName() // Hi!
+
+// ⚠️ There's no such thing(internal name feature) for function declaration
+// ㄴ It is only available in function expression
