@@ -25,6 +25,7 @@ Essential JS Concepts & Topics
    -  function-basic
    -  recursion
    -  closure
+   -  new-function
 -  class
 -  object
    -  object
