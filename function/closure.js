@@ -26,9 +26,13 @@ lunchMenu(); // I want to have Bibimbap 🍚 for lunch!
 // In JavaScript, closures are created every time a function is created, at function creation time."
 
 // Q: "What is a closure?"
-// 🙋🏻‍♀️: "A closure is a combination of a function bundled together,
+// A-1.🙋🏻‍♀️: "A closure is a combination of a function bundled together,
 // which gives you access to the outer function's scope from an inner function"
+// A-2.🙋🏻‍♀️: "A closure is a function that 💡 remembers its outer variables and can ✨ access them"
 
 // Garbage Collection
 // Memory is kept only when a object is reachable(when it is still there)
 // if the function call finishes, a lexical environment is removed from memory
+
+// ⚠️ Usually, a function automatically is a closure
+// except for a new Function syntax
