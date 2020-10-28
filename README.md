@@ -27,6 +27,7 @@ Essential JS Concepts & Topics
    -  closure
    -  new-function
    -  scheduling
+   -  decorator
 -  class
 -  object
    -  object
