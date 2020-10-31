@@ -28,6 +28,7 @@ Essential JS Concepts & Topics
    -  new-function
    -  scheduling
    -  decorator
+   -  binding
 -  class
 -  object
    -  object
