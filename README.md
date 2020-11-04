@@ -29,6 +29,7 @@ Essential JS Concepts & Topics
    -  scheduling
    -  decorator
    -  binding
+   -  arrow-function
 -  class
 -  object
    -  object
