@@ -44,7 +44,7 @@ Essential JS Concepts & Topics
 -  async vs defer 
 -  related topics
    - Node.js
-   -  json
+   -  JSON
 -  data-structure
 -  date-and-time
 -  rest-and-spread
