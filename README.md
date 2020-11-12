@@ -34,6 +34,9 @@ Essential JS Concepts & Topics
 -  object
    -  object
    -  object-destructuring
+   -  global-object
+   -  properties-config
+   -  getter-setter
 -  array
    -  array
    -  array APIs (quiz & answer)
