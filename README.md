@@ -37,6 +37,7 @@ Essential JS Concepts & Topics
    -  global-object
    -  properties-config
    -  getter-setter
+   -  prototypal-inheritance
 -  array
    -  array
    -  array APIs (quiz & answer)
