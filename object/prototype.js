@@ -1,6 +1,6 @@
 'use strict';
 
-// Prototypal Inheritance
+// ✅ Prototypal Inheritance
 // ㄴ very useful in a situation when we want to take something and extend it.
 
 // 1. [[Prototype]]
@@ -84,3 +84,29 @@ for (let prop in jayul) {
 }
 // Own: cute
 // Inherited: isBrown
+
+// ✅ F.prototype
+let human = {
+	thinks: true
+};
+function Person(name) {
+	this.name = name;
+}
+Person.prototype = human;
+let dasom = new Person('Dasom'); // dasom.__proto__ == human
+console.log(dasom.thinks); // true
+// Setting Person.prototype = human means
+// - when a new Person is create,
+// - assign its [[Prototype]] to human
+
+// ⚠️ JavaScript itselt does not ensure the right "constructor" value
+// it exsits in the default "prototype" for functions
+// in particular, if we replace the default prototype as a whole,
+// then there will be no "constructor" in it.
+function Individual() {}
+Individual.prototype = {
+	hasFreedom: true
+};
+let jiyoung = new Individual();
+console.log(jiyoung.constructor === Individual); // false
+console.log(jiyoung.constructor); // f Object(){[native code]}
