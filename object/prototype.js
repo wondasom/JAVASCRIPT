@@ -110,3 +110,22 @@ Individual.prototype = {
 let jiyoung = new Individual();
 console.log(jiyoung.constructor === Individual); // false
 console.log(jiyoung.constructor); // f Object(){[native code]}
+
+// 2. Other prototype methods
+// - __proto__ is considered outdated
+// - the modern methods are
+// 1) Object.create(proto, [descriptors])
+//    ㄴ makes an empty object with given 'proto' as [[Prototype]] and optional property descriptors
+// 2) Object.getPrototpyeOf(obj)
+//    ㄴ returns the [[Prototype]] of the obj
+// 3) Object.setPrototpyeOf(obj, proto)
+//    ㄴ sets the [[Prototype]] of obj to proto
+let food = {
+	edible: true
+};
+let rice = Object.create(food);
+console.log(rice.edible); // true
+console.log(Object.getPrototypeOf(rice)); // { edible: true }
+Object.setPrototypeOf(rice, { nutritious: true });
+console.log(Object.getPrototypeOf(rice)); // { nutritious: true }
+
