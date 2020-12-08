@@ -22,7 +22,7 @@ setTimeout(function() {
 setTimeout(() => dasom.sayHi(), 1000); // Hi, Dasom
 // ㄴ we can write the same code but short like above
 
-// However, this solution has a little vulneralbility
+// However, this solution has a little vulnerability
 // - what if before setTimeOut triggers, dasom object changes values?
 // - in that case, it will call the wrong object
 
