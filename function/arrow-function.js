@@ -25,5 +25,5 @@ let obj = {
 obj.a(); // (a) this: [object Window], this.is: undefined, obj.i: 10
 obj.b(); // (a) this: [object Object], this.is: 10, obj.i: 10
 
-// (2) call, apply and bind and Arrow Function
-// they are not suitable for arrow funtions
+// (2) call, apply, and bind and Arrow Function
+// they are not suitable for arrow functions
