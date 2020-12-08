@@ -1,7 +1,7 @@
 // Callback Hell example - ✨ SOLUTION ✨
-// 1. it is not common to request Backend to have user's role(guest, admin etc).
+// 1. it is not common to request Backend to have a user's role(guest, admin, etc).
 // it usually comes together with login.
-// however, we have this as an exception for a example's sake.
+// however, we have this as an exception for an example's sake.
 // 2. since we don't have a backend now,
 // we'll use setTimeout instead, to pretend we have a server.
 
