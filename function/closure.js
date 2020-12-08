@@ -13,7 +13,7 @@ function lunchMenu() {
 menu = 'Bibimbap 🍚';
 lunchMenu(); // I want to have Bibimbap 🍚 for lunch!
 
-// to really understand this concept, you might need to have solid understanding on Lexical Environment
+// to really understand this concept, you might need to have a solid understanding of Lexical Environment
 
 // 👉🏼 According to JavaScript Info, a closure is
 // "a function that remembers its outer variables and can access them"
@@ -31,7 +31,7 @@ lunchMenu(); // I want to have Bibimbap 🍚 for lunch!
 // A-2.🙋🏻‍♀️: "A closure is a function that 💡 remembers its outer variables and can ✨ access them"
 
 // Garbage Collection
-// Memory is kept only when a object is reachable(when it is still there)
+// Memory is kept only when an object is reachable(when it is still there)
 // if the function call finishes, a lexical environment is removed from memory
 
 // ⚠️ Usually, a function automatically is a closure
