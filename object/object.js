@@ -123,7 +123,7 @@ console.log(mixed);
 console.log(mixed.color);
 console.log(mixed.size);
 
-// Reading of Obejct copying, reference: https://javascript.info/object-copy
+// Reading of Object copying, reference: https://javascript.info/object-copy
 
 // 8. Optional Chaining ?.
 // ㄴ not an operator
