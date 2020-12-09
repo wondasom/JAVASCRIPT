@@ -19,7 +19,7 @@ window.user = {
 console.log(user.name); // Dasom
 console.log(window.user.name); // Dasom -> safer way to call
 
-// (3) We use global object to test for support of modern language features - ex: Promise
+// (3) We use a global object to test for support of modern language features - ex: Promise
 if (!window.Promise) {
 	console.log('Your browser is old and not supporting Promise!');
 }
