@@ -1,13 +1,13 @@
 'use strict';
 
 // Decorators and forwarding
-// - since JavaScript is incredibily flexible with functions, we can forward and decorate function calls
+// - since JavaScript is incredibly flexible with functions, we can forward and decorate function calls
 
 // (1) Decorator (General practice to functions)
-// ㄴ a special function that takes another funtion and alter its behavior(simply put, a container function)
+// ㄴ a special function that takes another function and alters its behavior(simply put, a container function)
 // - imagine a situation where a function is really heavy so you want to minimize the number of the function calls
 // - what we can do here is to make cache(memory) of the function call
-// - and in doing so, we can use decorator
+// - and in doing so, we can use a decorator
 
 function heavyFunc(x) {
 	// so heavy calculation!!
