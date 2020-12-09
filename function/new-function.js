@@ -6,7 +6,7 @@
 
 // Point
 // ⚠️ (1) the function is created from a string
-// ⚠️ (2) the function is not a closure(which means it cannot access to its outer scope. It can only access to the global scope.)
+// ⚠️ (2) the function is not a closure(which means it cannot access its outer scope. It can only access the global scope.)
 
 // syntax
 let newFunc = new Function('a', 'b', 'return a+b');
