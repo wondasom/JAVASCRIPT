@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 // Object-oriented programming
 // class: template (ex - 붕어빵 틀)
@@ -11,7 +11,7 @@
 class Person {
 	// constructor
 	constructor(name, age) {
-		// fields
+		// fields(a syntax that allows to add any properties)
 		this.name = name;
 		this.age = age;
 	}
@@ -21,11 +21,23 @@ class Person {
 	}
 }
 
-const dasom = new Person("dasom", 27);
+const dasom = new Person('dasom', 27);
 console.log(dasom);
 console.log(dasom.name);
 console.log(dasom.age);
 dasom.speak();
+
+console.log(typeof Person); // function
+console.log(Person == Person.prototype.constructor); // true
+console.log(Person.prototype.speak); // f speak() {console.log(`${this.name}: hello!`)}
+console.log(Object.getOwnPropertyNames(Person.prototype)); // "constructor", "speak"
+
+// ⚠️ No comma between class methods!
+// a comma between class methods will cause a syntax error
+// do not get confused with object literals
+// c.f) A JavaScript object literal is a comma-separated list of name-value pairs wrapped in curly braces.
+// Object literals encapsulate data, enclosing it in a tidy package.
+// This minimizes the use of global variables which can cause problems when combining code.
 
 // 2. Getter and Setter
 class User {
@@ -57,7 +69,7 @@ class User {
 	}
 }
 
-const user1 = new User("Steve", "Job", -1);
+const user1 = new User('Steve', 'Job', -1);
 console.log(user1.age);
 
 // 3. Fields (public, private)
@@ -74,7 +86,7 @@ console.log(experiment.privateField);
 // 4. Static properties and methods
 // Too soon!
 class Article {
-	static publisher = "Dasom Won";
+	static publisher = 'Dasom Won';
 	constructor(articleNumber) {
 		this.articleNumber = articleNumber;
 	}
@@ -121,11 +133,11 @@ class Triangle extends Shape {
 	}
 }
 
-const rectangle = new Rectangle(20, 20, "blue");
+const rectangle = new Rectangle(20, 20, 'blue');
 rectangle.draw();
 console.log(rectangle.getArea());
 
-const triangle = new Triangle(20, 20, "red");
+const triangle = new Triangle(20, 20, 'red');
 triangle.draw();
 console.log(triangle.getArea());
 
@@ -138,3 +150,8 @@ console.log(triangle instanceof Object); // true
 
 // MDN's JavaScript reference:
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
+
+// 7. Solution for the problem of "losing this"
+// 1) Pass a wrapper-function
+// 2) Bind the method to object
+// 3) Use arrow function
