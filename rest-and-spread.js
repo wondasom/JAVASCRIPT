@@ -46,7 +46,7 @@ showName('Jihee'); // 1, Jihee, undefined
 // ⚠️ arrow function does not have "arguments"
 // ⚠️ arguments are array-like, not an actual array, hence you can't use array methods like .map()
 
-// 3. Spead Syntax
+// 3. Spread Syntax
 // array ➡ parameters
 // (1) sometimes we need to 'spread' an array into parameters(see the example below)
 // ㄴ if the parameter is an array in a function where numeric arguments are expected
