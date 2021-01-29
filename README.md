@@ -30,6 +30,7 @@ Essential JS Concepts & Topics
    -  decorator
    -  binding
    -  arrow-function
+-  must-know-syntax
 -  class
 -  object
    -  object
@@ -59,4 +60,3 @@ Essential JS Concepts & Topics
 1. [Ellie's JavaScript ES6 series](https://youtu.be/wcsVjmHrUQg) 
 
 2. [JAVASCRIPT INFO](https://javascript.info/)
-
